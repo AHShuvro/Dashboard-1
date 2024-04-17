@@ -78,7 +78,7 @@ const Pie3 = () => {
                     cy="50%"
                     innerRadius={60}
                     outerRadius={80}
-                    fill="#82ca9d" label />
+                    fill="#10C469" label />
             </PieChart>
         </div>
     );

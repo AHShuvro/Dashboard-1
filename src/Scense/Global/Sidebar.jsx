@@ -27,7 +27,7 @@ const Sidebar = () => {
                 <div className="pl-3">
                     <div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <FaUserFriends className="text-xl" />
-                        <p className="ml-2">Manage Team</p>
+                        <Link to={'/team'}><p className="ml-2">Manage Team</p></Link>
                     </div>
                     <div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <MdContactMail className="text-xl" />
@@ -42,7 +42,7 @@ const Sidebar = () => {
                 <div className="pl-3 text-[#343a40] dark:text-[#F7F7F7]">
                     <div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <MdOutlineBarChart className="text-xl" />
-                        <p className="ml-2">Bar Chart</p>
+                        <Link to={'/bar'}><p className="ml-2">Bar Chart</p></Link>
                     </div>
                     <Link to={'/pie'}><div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <FaChartPie className="text-xl" />

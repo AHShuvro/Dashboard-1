@@ -4,6 +4,8 @@ import Topbar from "./Scense/Global/Topbar";
 import Sidebar from "./Scense/Global/Sidebar";
 import Dashboard from "./Scense/Dashboard/Dashboard";
 import PieChartComponent from "./Scense/Charts/PieChartComponent";
+import BarChartComponent from "./Scense/Charts/BarChartComponent";
+import ManageTeam from "./Scense/ManageTeam/ManageTeam";
 
 function App() {
   const [mode, setMode] = useState(localStorage.getItem('theme') || 'light');
@@ -33,6 +35,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/pie" element={<PieChartComponent />} />
+                <Route path="/bar" element={<BarChartComponent />} />
+                <Route path="/team" element={<ManageTeam />} />
               </Routes>
             </div>
           </div>

@@ -31,7 +31,7 @@ const Sidebar = () => {
                     </div>
                     <div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <MdContactMail className="text-xl" />
-                        <p className="ml-2">Contact Informations</p>
+                        <Link to={'/contact'}><p className="ml-2">Contact Informations</p></Link>
                     </div>
                     <div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <LiaFileInvoiceDollarSolid className="text-xl" />
@@ -50,7 +50,7 @@ const Sidebar = () => {
                     </div></Link>
                     <div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <FaChartLine className="text-xl" />
-                        <p className="ml-2">Line Chart</p>
+                        <Link to={'/line'}><p className="ml-2">Line Chart</p></Link>
                     </div>
                 </div>
             </div>

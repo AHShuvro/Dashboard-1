@@ -1,5 +1,4 @@
 import { IoFilterSharp } from "react-icons/io5";
-import { CiExport } from "react-icons/ci";
 
 const Contacts = () => {
     return (

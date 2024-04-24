@@ -1,7 +1,25 @@
+import { useEffect, useRef } from "react";
 
 const ChattBox = () => {
+
+    const containerRef = useRef(null);
+    const bottomRef = useRef(null);
+
+    useEffect(() => {
+        if (bottomRef.current && containerRef.current) {
+            const { top } = bottomRef.current.getBoundingClientRect();
+            const containerTop = containerRef.current.getBoundingClientRect().top;
+            const scrollTop = top - containerTop;
+
+            containerRef.current.scrollTo({
+                top: scrollTop,
+                behavior: 'smooth',
+            });
+        }
+    }, []);
+
     return (
-        <div id="2" className="col-span-1 xl:col-span-1 bg-[#F8F8F8] dark:bg-[#1C2438] p-3 overflow-y-scroll">
+        <div ref={containerRef} id="2" className="col-span-1 xl:col-span-1 bg-[#F8F8F8] dark:bg-[#1C2438] p-3 overflow-y-scroll">
             <div className="chat chat-start">
                 <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
@@ -152,6 +170,7 @@ const ChattBox = () => {
                     Seen at 12:46
                 </div>
             </div>
+            <input ref={bottomRef} type="text" placeholder="Type here" className="input input-bordered input-info w-full" />
         </div>
     );
 };

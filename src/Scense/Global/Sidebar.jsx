@@ -35,7 +35,7 @@ const Sidebar = () => {
                     </div>
                     <div className="flex items-center py-1 text-[#343a40] dark:text-[#F7F7F7] hover:text-[#007FFF] focus:text-[#007FFF] dark:hover:text-[#5768b0] dark:focus:text-[#5768b0] w-[17rem] cursor-pointer" tabIndex={0}>
                         <LiaFileInvoiceDollarSolid className="text-xl" />
-                        <p className="ml-2">Invoices Balances</p>
+                        <Link to={'/balance'}><p className="ml-2">Invoices Balances</p></Link>
                     </div>
                 </div>
                 <p className="text-sm pt-4 pb-1 text-gray-400">Charts</p>

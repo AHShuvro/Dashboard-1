@@ -8,6 +8,7 @@ import BarChartComponent from "./Scense/Charts/BarChartComponent";
 import ManageTeam from "./Scense/ManageTeam/ManageTeam";
 import Contacts from "./Scense/Contacts/Contacts";
 import Line2 from "./Components/Line/Line2";
+import InvoicesBalance from "./Scense/InvoiceBalance/InvoicesBalance";
 
 function App() {
   const [mode, setMode] = useState(localStorage.getItem('theme') || 'light');
@@ -39,6 +40,7 @@ function App() {
                 <Route path="/pie" element={<PieChartComponent />} />
                 <Route path="/bar" element={<BarChartComponent />} />
                 <Route path="/team" element={<ManageTeam />} />
+                <Route path="/balance" element={<InvoicesBalance />} />
                 <Route path="/contact" element={<Contacts />} />
                 <Route path="/line" element={<Line2 />} />
               </Routes>

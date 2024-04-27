@@ -26,8 +26,8 @@ const InvoicesBalance = () => {
     return (
         <div id="1" className="w-full overflow-y-scroll">
             <div className="bg-[#F8F8F8] dark:bg-[#1C2438] flex flex-col px-4 py-6">
-                <p className="text-3xl text-[#495057] dark:text-[#ced4da] font-bold">TEAM</p>
-                <p className="p-1 text-sm text-[#495057] dark:text-[#ced4da]">Managing The Team Member</p>
+                <p className="text-3xl text-[#495057] dark:text-[#ced4da] font-bold">INVOICES</p>
+                <p className="p-1 text-sm text-[#495057] dark:text-[#ced4da]">List Of Invoices Balances</p>
             </div>
             
             <table className="w-full mb-10">

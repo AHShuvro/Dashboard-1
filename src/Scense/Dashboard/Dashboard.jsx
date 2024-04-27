@@ -8,7 +8,7 @@ import ChattBox from "./ChattBox";
 
 const Dashboard = () => {
     return (
-        <div className="pb-20">
+        <div className="mb-10">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-6">
                 <Informations />
             </div>

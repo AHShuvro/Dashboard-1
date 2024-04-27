@@ -42,7 +42,7 @@ const Contacts = () => {
                 <IoFilterSharp className="text-base font-semibold" />
                 <button className="text-base font-semibold">FILTERS</button>
             </div>
-            <div className={`bg-gray-300 pb-3 pl-3 pr-3 ${filter ? "" : "hidden"}`}>
+            <div className={`bg-gray-300 dark:bg-[#383B8C] pb-3 pl-3 pr-3 ${filter ? "" : "hidden"}`}>
                 <div className="flex gap-3">
                     <label className="form-control w-full h-16 max-w-xs">
                         <div className="label">
@@ -66,7 +66,7 @@ const Contacts = () => {
                     </label>
                 </div>
             </div>
-            <table className="w-full mb-16">
+            <table className="w-full mb-10">
                 <thead>
                     <tr className="bg-[#F8F8F8] dark:bg-[#1C2438]">
                         <th className="text-start text-[#6c757d] dark:text-[#ced4da] pl-4 py-3">ID</th>

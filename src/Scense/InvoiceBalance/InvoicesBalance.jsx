@@ -30,7 +30,7 @@ const InvoicesBalance = () => {
                 <p className="p-1 text-sm text-[#495057] dark:text-[#ced4da]">Managing The Team Member</p>
             </div>
             
-            <table className="w-full">
+            <table className="w-full mb-10">
                 <thead>
                     <tr>
                         <div className="form-control w-0 px-3">

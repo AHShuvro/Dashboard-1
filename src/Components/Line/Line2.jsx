@@ -197,7 +197,7 @@ const Line2 = () => {
     ]
 
     return (
-        <div id='parentDiv'  style={{ height: `calc(100vh - 80px)` }}>
+        <div id='parentDiv'  style={{ height: `calc(100vh - 100px)` }}>
             <AreaChart width={chartWidth} height={chartHeight} data={data}
                 margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
                 <XAxis dataKey="name" />

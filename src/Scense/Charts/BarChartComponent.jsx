@@ -63,7 +63,7 @@ const BarChartComponent = () => {
     ]
 
     return (
-        <div id='parentDiv'  style={{ height: `calc(100vh - 80px)` }}>
+        <div id='parentDiv'  style={{ height: `calc(100vh - 100px)` }}>
             <BarChart width={chartWidth} height={chartHeight} data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />

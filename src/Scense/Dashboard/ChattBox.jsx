@@ -170,7 +170,7 @@ const ChattBox = () => {
                     Seen at 12:46
                 </div>
             </div>
-            <input ref={bottomRef} type="text" placeholder="Type here" className="input input-bordered input-info w-full" />
+            <input ref={bottomRef} type="text" placeholder="Type here" className="input bg-[#2B3440] border-none input-bordered input-info w-full" />
         </div>
     );
 };
